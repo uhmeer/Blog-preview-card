@@ -1,0 +1,115 @@
+:root {
+    --clr-primary:hsl(47, 88%, 63%);
+    --clr-white:  hsl(0, 0%, 100%);
+    --clr-light:  hsl(0, 0%, 50%);
+    --clr-dark:   hsl(0, 0%, 7%);
+
+    --ff-primary: 'Figtree', sans-serif;
+
+    --fw-extra-bold: 800;
+    --fw-semi-bold: 600;
+    --fw-regular: 400;
+
+    --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;  
+}
+
+ /* ---------------------*/
+ /* Utility classes */
+ /* -------------------- */
+
+ .bg-dark{background-color: var(--clr-dark);}
+ .bg-light{background-color: var(--clr-light);}
+ .bg-white{background-color: var(--clr-white);}
+ .bg-yellow{background-color: var(--clr-primary);}
+
+
+ .text-dark{color: var(--clr-dark);}
+ .text-white{color: var(--clr-white);}
+ .text-light{color: var(--clr-light);}
+ .text-yellow{color: var(--clr-primary);}
+
+ .fw-xbold{font-weight: var(--fw-extra-bold);}
+ .fw-sbold{font-weight: var(--fw-semi-bold);}
+ .fw-regular{font-weight: var(--fw-regular);}
+
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+.flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+ }
+ 
+ .grid{
+    display: grid;
+    gap: var(--gap, 1rem);
+ }
+ 
+ .d-block{
+    display: block;
+ }
+
+ .container{
+
+    margin-inline: auto;
+    max-width: fit-content;
+ }
+
+ .border-rad{
+    
+    border-radius: 1.5em;
+ }
+
+ .mg-top{
+   margin-top: 1em;
+ }
+
+*{
+    margin: 0;
+    font-family: var(--ff-primary);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  body {
+   min-height: 100vh;
+   line-height: 1.5;
+ }
+
+ img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.card {
+   box-shadow: #000000 .5rem .5rem ; 
+ }
+
+.card-text > :nth-child(3):hover {
+   color: var(--clr-primary);
+}
