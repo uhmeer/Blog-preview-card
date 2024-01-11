@@ -57,6 +57,7 @@
  .grid{
     display: grid;
     gap: var(--gap, 1rem);
+    grid-template-rows: 90% 1fr;
  }
  
  .d-block{
@@ -98,7 +99,6 @@ html {
   body {
    min-height: 100vh;
    line-height: 1.5;
-    grid-template-rows: 90% 1fr;
 
  }
 
